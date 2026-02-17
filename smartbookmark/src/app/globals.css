@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Color Palette */
+  --color-primary: #EB4C4C;
+  --color-primary-light: #FF7070;
+  --color-primary-lighter: #FFA6A6;
+  --color-accent: #FFEDC7;
+  
+  /* Semantic Colors */
+  --color-background: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-text: #2D3748;
+  --color-text-secondary: #718096;
+  --color-border: #E2E8F0;
+  
+  /* Button Variants */
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-hover: #D63838;
+  --btn-secondary-bg: var(--color-background);
+  --btn-secondary-hover: var(--color-surface);
+}
+
+/* Global Button Styles */
+.btn-primary {
+  background-color: var(--btn-primary-bg) !important;
+  color: white !important;
+  border: none !important;
+  transition: all 0.8s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(235, 76, 76, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--color-primary) !important;
+  border: 2px solid var(--color-primary) !important;
+  transition: all 0.8s ease !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+/* Card Styles */
+.card-primary {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+}
+
+.card-accent {
+  background-color: var(--color-primary-light) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+
+/* Text Styles */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-accent {
+  color: var(--color-primary-light) !important;
+}
+
+/* Background Styles */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-accent) !important;
+}
+
+.bg-surface {
+  background-color: var(--color-surface) !important;
+}
+
